@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Performance 7 Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Inter, sans-serif;
+        background: #fff;
+        color: #051e58;
+      }
+      .container {
+        width: min(1100px, 90%);
+        margin: auto;
+      }
+      header {
+        padding: 30px 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        height: 70px;
+      }
+      .menu {
+        display: flex;
+        gap: 35px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #051e58;
+        font-weight: 600;
+      }
+      .hero {
+        min-height: 78vh;
+        display: flex;
+        align-items: center;
+      }
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      h1 {
+        font-size: 60px;
+        line-height: 1.05;
+        margin-bottom: 25px;
+      }
+      h1 span {
+        background: linear-gradient(90deg, #8f45ff, #4d22c8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.8;
+        color: #3f4b67;
+        margin-bottom: 40px;
+      }
+      .buttons {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        padding: 16px 34px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .primary {
+        background: linear-gradient(135deg, #9b4cff, #5a28d6);
+        color: #fff;
+      }
+      .secondary {
+        border: 2px solid #154e91;
+        color: #154e91;
+      }
+      .hero-image {
+        text-align: center;
+      }
+      .hero-image img {
+        width: 100%;
+        max-width: 430px;
+      }
+      footer {
+        text-align: center;
+        padding: 50px;
+        color: #6b7280;
+        font-size: 14px;
+      }
+      @media (max-width: 900px) {
+        .hero-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .menu {
+          display: none;
+        }
+        h1 {
+          font-size: 42px;
+        }
+        .buttons {
+          justify-content: center;
+        }
+        .hero-image {
+          order: -1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="menu">
+            <a href="#">Home</a><a href="#">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div>
+            <h1>Build your <span>digital growth</span></h1>
+            <p>
+              Professional web development, automation and digital solutions
+              designed to help businesses grow through technology.
+            </p>
+          </div>
+          <div class="hero-image"><img src="images/logo.png" /></div>
+        </div>
+      </div>
+    </section>
+    <footer>© 2026 Performance 7 Digital. All rights reserved.</footer>
+  </body>
+</html>
